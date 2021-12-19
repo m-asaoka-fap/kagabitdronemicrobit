@@ -1,1 +1,37 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="PB?drJr2Vc}zgLtO=]b_" x="20" y="20"/><block type="device_forever" id="GRyl(hge5Y/hzzq(z9V/" x="225" y="20"/></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="/NRzn94n3?$Bg|-pJAa#">distanse</variable></variables><block type="pxt-on-start" id="KBn;s,0Z%`ka:g8s}UD*" x="0" y="0"><statement name="HANDLER"><block type="Tello_radiosetgroup" id="_.Jtgc^*AWP$[kLyh[d$"><value name="value"><shadow type="math_number" id="X9Gs)DcoHDcOyr*qhbF;"><field name="NUM">101</field></shadow></value><next><block type="variables_set" id="|]qpKR9NC7kvPa%az$44"><field name="VAR" id="/NRzn94n3?$Bg|-pJAa#">distanse</field><value name="VALUE"><shadow type="math_number" id="{kkg4Ke;K4^$oT7$CaCl"><field name="NUM">30</field></shadow></value></block></next></block></statement></block><block type="device_button_event" id="CDHQ[.G`WK=;;khJF6gh" x="409" y="0"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="variables_change" id="H`rS,5=+l33k~}e5nZ.%"><field name="VAR" id="/NRzn94n3?$Bg|-pJAa#">distanse</field><value name="VALUE"><shadow type="math_number" id="CIPv9E+6~yp,XBudlx$!"><field name="NUM">-10</field></shadow></value><next><block type="device_print_message" id="IG[8;,_f8+nhkUmW2QEa"><value name="text"><shadow type="text"><field name="TEXT"/></shadow><block type="variables_get" id="e7L=J;_XWr.zBp;ZU;FW"><field name="VAR" id="/NRzn94n3?$Bg|-pJAa#">distanse</field></block></value></block></next></block></statement></block><block type="device_button_event" id="F@idSn4fC/L.p3dyTjP=" x="861" y="0"><field name="NAME">Button.AB</field><statement name="HANDLER"><block type="controls_if" id="x1WKF7fe^!4jAElnYW0y"><mutation else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="Tello_getflying" id="T7Z*9BpLYWoxJE7!lB-^"/></value><statement name="DO0"><block type="Tello_land" id="m6q=M=-~}Uvm^.~5o}cY"><next><block type="device_show_leds" id="S9V!b2j5L+xSkqcI#cp7"><field name="LEDS">`
+        . # # # . 
+        . # # # . 
+        # # # # # 
+        . # # # . 
+        . . # . .
+        `</field></block></next></block></statement><statement name="ELSE"><block type="Tello_takeoff" id="tu)]I=t`(+W%gl}$V_%k"><next><block type="device_show_leds" id="}Ll43W,^K{!/%HR*E3Zf"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # # # # # 
+        . # # # . 
+        . # # # .
+        `</field></block></next></block></statement></block></statement></block><block type="device_button_event" id="!AJ{dA;?SnR)VD8t2zeb" x="1318" y="0"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="variables_change" id="=bHw{/d+V]Hv;)HJ450!"><field name="VAR" id="/NRzn94n3?$Bg|-pJAa#">distanse</field><value name="VALUE"><shadow type="math_number" id="vAb!OC5@EjL+*L:TU*89"><field name="NUM">10</field></shadow></value><next><block type="device_print_message" id="JHp(uR0e.d$uS0g9^`z#"><value name="text"><shadow type="text"><field name="TEXT"/></shadow><block type="variables_get" id="_*(J};wX0jfD%w(r/_;]"><field name="VAR" id="/NRzn94n3?$Bg|-pJAa#">distanse</field></block></value></block></next></block></statement></block><block type="device_gesture_event" id="54!AYc3LF`MO7N,|2%c%" x="1762" y="0"><field name="NAME">Gesture.TiltRight</field><statement name="HANDLER"><block type="Tello_right" id="AIP+m7%cV*8%uS#V_O,V"><value name="value"><shadow type="math_number" id="~d%+3wg5+TPBfu6IZce`"><field name="NUM">50</field></shadow></value><next><block type="device_show_leds" id="SPX*Jks|P~P:8Q}={x[f"><field name="LEDS">`
+        . . # . . 
+        . . . # . 
+        # # # # # 
+        . . . # . 
+        . . # . .
+        `</field><next><block type="device_pause" id="EB~^Bb!U~c8LU6dQD2nl"><value name="pause"><shadow type="timePicker" id="`N%]8U74r$}U{Q$e/Aq4"><field name="ms">100</field></shadow></value></block></next></block></next></block></statement></block><block type="device_gesture_event" id="e:VWjB=@3thV1w?r?7-~" x="0" y="799"><field name="NAME">Gesture.TiltLeft</field><statement name="HANDLER"><block type="Tello_left" id="A]?!Z-WPb3U^!ij%fW;Q"><value name="value"><shadow type="math_number" id="iT-BYk2jXe^C*$1fP*qg"><field name="NUM">50</field></shadow></value><next><block type="device_show_leds" id="?VMh6OsjMW.bT1z^5o)g"><field name="LEDS">`
+        . . # . . 
+        . # . . . 
+        # # # # # 
+        . # . . . 
+        . . # . .
+        `</field><next><block type="device_pause" id="Ne;*kj3nw7iC9bj40kgf"><value name="pause"><shadow type="timePicker" id="fdsp$iu;v@yGO$o-_Mv`"><field name="ms">100</field></shadow></value></block></next></block></next></block></statement></block><block type="device_gesture_event" id="dPeuNAbt+}yi~=nLu:aG" x="358" y="799"><field name="NAME">Gesture.LogoUp</field><statement name="HANDLER"><block type="Tello_back" id="$kGm34[mbb7E`w[VM.)2"><value name="value"><shadow type="math_number" id="Hxs}qF/JJYmca)-l(je}"><field name="NUM">50</field></shadow></value><next><block type="device_show_leds" id="WcIK;?NM:q+};w/E;;TE"><field name="LEDS">`
+        . . # . . 
+        . . # . . 
+        # . # . # 
+        . # # # . 
+        . . # . .
+        `</field><next><block type="device_pause" id="m3Pq34b,=2q:F8]||)8M"><value name="pause"><shadow type="timePicker" id="-D`9X?d^8d[I?S1@iFUQ"><field name="ms">100</field></shadow></value></block></next></block></next></block></statement></block><block type="device_gesture_event" id="+O@U8uQp?jVL1T/y=Z]," x="717" y="799"><field name="NAME">Gesture.LogoDown</field><statement name="HANDLER"><block type="Tello_forward" id="TKtB%I]Gu@CC0$iK33ZA"><value name="value"><shadow type="math_number" id="^8SOZGmGLCn%;[$|!B45"><field name="NUM">50</field></shadow></value><next><block type="device_show_leds" id="uU3xr_PY`}wEiaY~Ru70"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # . # . # 
+        . . # . . 
+        . . # . .
+        `</field><next><block type="device_pause" id="QF15BA(89(JecEhB`E8o"><value name="pause"><shadow type="timePicker" id="=iyCYcfAkC,T?`+e%8|w"><field name="ms">100</field></shadow></value></block></next></block></next></block></statement></block></xml>
