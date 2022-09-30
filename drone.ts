@@ -114,7 +114,7 @@ namespace Tello {
      * 回転角度をえらんでね．．
      * @param value 時計回りする角度を設定する value 1-360, eg: 90
      */
-    //% block="%value 度とけいまわりに回る"
+    //% block="とけいまわりに回る %value 度"
     //% group="初心者向け"
     export function rotate_cw(value: number): void {
         if (flying == 1) {
@@ -128,7 +128,7 @@ namespace Tello {
      * 回転角度をえらんでね．．
      * @param value 半時計回りする角度を設定する value 1-360, eg: 90
      */
-    //% block="はんとけいまわり %value"
+    //% block="はんとけいまわり %value 度"
     //% group="初心者向け"
     export function rotate_ccw(value: number): void {
         if (flying == 1) {

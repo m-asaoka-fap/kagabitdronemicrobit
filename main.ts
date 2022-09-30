@@ -10,8 +10,7 @@ input.onGesture(Gesture.TiltRight, function () {
     basic.pause(100)
 })
 input.onButtonPressed(Button.A, function () {
-    distanse += -10
-    basic.showString("" + (distanse))
+    Tello.rotate_cw(90)
 })
 input.onGesture(Gesture.TiltLeft, function () {
     Tello.left(50)
@@ -47,30 +46,9 @@ input.onGesture(Gesture.LogoDown, function () {
     basic.pause(100)
 })
 input.onButtonPressed(Button.AB, function () {
-    if (Tello.getflying()) {
-        Tello.land()
-        basic.showLeds(`
-            . # # # .
-            . # # # .
-            # # # # #
-            . # # # .
-            . . # . .
-            `)
-    } else {
-        Tello.takeoff()
-        basic.showLeds(`
-            . . # . .
-            . # # # .
-            # # # # #
-            . # # # .
-            . # # # .
-            `)
-    }
+    Tello.fly_or_land()
 })
 input.onButtonPressed(Button.B, function () {
-    distanse += 10
-    basic.showString("" + (distanse))
+    Tello.rotate_ccw(90)
 })
-let distanse = 0
 Tello.radiosetgroup(101)
-distanse = 30
