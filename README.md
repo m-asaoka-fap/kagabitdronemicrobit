@@ -1,5 +1,5 @@
 
-> このページを開く [https://naikasann.github.io/drone_for_fap/](https://naikasann.github.io/drone_for_fap/)
+> このページを開く [https://github.com/m-asaoka-fap/kagabitdronemicrobit/](https://github.com/m-asaoka-fap/kagabitdronemicrobit/)
 
 ## 拡張機能として使用
 
@@ -8,7 +8,7 @@
 * [https://makecode.microbit.org/](https://makecode.microbit.org/) を開く
 * **新しいプロジェクト** をクリックしてください
 * ギアボタンメニューの中にある **拡張機能** をクリックしてください
-* **https://github.com/naikasann/drone_for_fap** を検索してインポートします。
+* **https://github.com/m-asaoka-fap/kagabitdronemicrobit** を検索してインポートします。
 
 ## このプロジェクトを編集します ![ビルド ステータス バッジ](https://github.com/naikasann/drone_for_fap/workflows/MakeCode/badge.svg)
 
@@ -16,7 +16,7 @@ MakeCode でこのリポジトリを編集します。
 
 * [https://makecode.microbit.org/](https://makecode.microbit.org/) を開く
 * **読み込む** をクリックし、 **URLから読み込む...** をクリックしてください
-* **https://github.com/naikasann/drone_for_fap** を貼り付けてインポートをクリックしてください
+* **https://github.com/m-asaoka-fap/kagabitdronemicrobit/** を貼り付けてインポートをクリックしてください
 
 ## ブロックのプレビュー
 

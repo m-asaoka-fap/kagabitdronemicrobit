@@ -13,6 +13,16 @@ namespace Tello {
     export function radiosetgroup(value: number): void {
         radio.setGroup(value)
     }
+    
+    /**
+     * 通信グループの設定を行う．受信機と送信機のグループ設定は合わせてね！
+     * @param スピードの設定を行う value 10-100, eg: 10
+     */
+    //% block="スピードを設定する %value"
+    //% group="設定"
+    export function Setspeed(value : number): void {
+        radio.sendString("speed=" + value)
+   　}
 
     /**
      * ドローンが上昇するよ！
@@ -20,7 +30,7 @@ namespace Tello {
      * @param value 移動距離を設定する(cm) value 20-500, eg: 20
      */
     //% block="%value cm上がる"
-    //% group="つかわないかも"
+    //% group="中級者向け"
     export function up(value: number): void {
         if (flying == 1) {
             radio.sendString("up=" + value)
@@ -35,7 +45,7 @@ namespace Tello {
      * @param value 移動距離を設定する(cm) value 20-500, eg: 20
      */
     //% block="%value cm上がる"
-    //% group="つかわないかも"
+    //% group="中級者向け"
     export function down(value: number): void {
         if (flying == 1) {
             radio.sendString("down=" + value)
@@ -172,6 +182,51 @@ namespace Tello {
         } else if (flying == 1) {
             radio.sendString("land")
             flying = 0
+        }
+    }
+
+    /**
+    * ドローンが前フリップします！おしゃれ！
+    */
+    //% block="前フリップする"
+    //% group="フリップ"
+    export function forward_flip(): void {
+        if (flying == 1) {
+            radio.sendString("flip=f")
+        }
+    
+    }
+
+    /**
+     * ドローンが後ろフリップします！おしゃれ！
+     */
+    //% block="後ろフリップする"
+    //% group="フリップ"
+    export function back_flip(): void {
+        if (flying == 1) {
+            radio.sendString("flip=b")
+        }
+    }
+
+    /**
+     * ドローンが左フリップします！おしゃれ！
+     */
+    //% block="左フリップする"
+    //% group="フリップ"
+    export function left_flip(): void {
+        if (flying == 1) {
+            radio.sendString("flip=l")
+        }
+    }
+
+    /**
+     * ドローンが右フリップします！おしゃれ！
+     */
+    //% block="右フリップする"
+    //% group="フリップ"
+    export function right_flip(): void {
+        if (flying == 1) {
+            radio.sendString("flip=r")
         }
     }
     
