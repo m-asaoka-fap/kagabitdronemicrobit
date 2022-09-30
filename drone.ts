@@ -128,7 +128,7 @@ namespace Tello {
      * 回転角度をえらんでね．．
      * @param value 半時計回りする角度を設定する value 1-360, eg: 90
      */
-    //% block="はんとけいまわり %value 度"
+    //% block="はんとけいまわりに回る %value 度"
     //% group="初心者向け"
     export function rotate_ccw(value: number): void {
         if (flying == 1) {
