@@ -24,26 +24,10 @@ input.onGesture(Gesture.TiltLeft, function () {
     basic.pause(100)
 })
 input.onGesture(Gesture.LogoUp, function () {
-    Tello.back(50)
-    basic.showLeds(`
-        . . # . .
-        . . # . .
-        # . # . #
-        . # # # .
-        . . # . .
-        `)
-    basic.pause(100)
+    Tello.back(20)
 })
 input.onGesture(Gesture.LogoDown, function () {
-    Tello.forward(50)
-    basic.showLeds(`
-        . . # . .
-        . # # # .
-        # . # . #
-        . . # . .
-        . . # . .
-        `)
-    basic.pause(100)
+    Tello.forward(20)
 })
 input.onButtonPressed(Button.AB, function () {
     Tello.fly_or_land()
