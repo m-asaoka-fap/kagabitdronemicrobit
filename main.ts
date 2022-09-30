@@ -47,6 +47,7 @@ input.onGesture(Gesture.LogoDown, function () {
 })
 input.onButtonPressed(Button.AB, function () {
     Tello.fly_or_land()
+    basic.pause(100)
     if (Tello.getflying()) {
         basic.showLeds(`
             . . # . .
