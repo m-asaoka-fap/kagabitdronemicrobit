@@ -52,7 +52,7 @@ namespace Tello {
     //% group="初心者向け"
     export function forward(value: number): void {
         if (flying == 1) {
-            radio.sendString("forward " + value)
+            radio.sendString("forward=" + value)
             flying = 1
         }
     }
