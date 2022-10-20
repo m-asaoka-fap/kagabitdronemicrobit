@@ -44,7 +44,7 @@ namespace Tello {
      * 地面に近すぎるとドローンがおかしくなるよ．気を付けてね
      * @param value 移動距離を設定する(cm) value 20-500, eg: 20
      */
-    //% block="%value cm上がる"
+    //% block="%value cm下がる"
     //% group="中級者向け"
     export function down(value: number): void {
         if (flying == 1) {

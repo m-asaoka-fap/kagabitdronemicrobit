@@ -69,4 +69,4 @@ input.onButtonPressed(Button.AB, function () {
 input.onButtonPressed(Button.B, function () {
     Tello.rotate_ccw(90)
 })
-Tello.radiosetgroup(101)
+Tello.radiosetgroup(9)
