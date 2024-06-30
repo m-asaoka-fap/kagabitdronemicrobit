@@ -70,3 +70,6 @@ input.onButtonPressed(Button.B, function () {
     Tello.rotate_ccw(90)
 })
 Tello.radiosetgroup(9)
+basic.forever(function () {
+    Tello.Setorder(1000)
+})
