@@ -255,7 +255,7 @@ namespace Tello {
     //% group="上級者向け"
     export function RCmode(a: number, b: number, c: number, d: number): void {
         if (flying == 1) {
-            let sendstring = "rc=" + a + "=" + b + "=" + c + "=" + d
+            let sendstring = "rc=" + a + " " + b + " " + c + " " + d
             radio.sendString(sendstring)
         }
     }
@@ -338,7 +338,7 @@ namespace Tello {
     //% group="上級者向け"
     export function xyz(x: number, y: number, z: number, speed: number): void {
         if (flying == 1 && command_enable == 1) {
-            let sendstring = "go=" + x + "=" + z + "=" + y + "=" + speed
+            let sendstring = "go=" + x + " " + z + " " + y + " " + speed
             radio.sendString(sendstring)
             command_enable = 0
         }
@@ -396,8 +396,8 @@ namespace Tello {
     //% group="ミッションパッド"
     export function gomid(x: number, y: number, z: number, speed: number, mid: number): void {
         if (flying == 1 && command_enable == 1) {
-            let sendstring = "go=" + x + "=" + z + "=&"
-            let sendstring2 = y + "=" + speed + "=m" + mid
+            let sendstring = "go=" + x + " " + z + " &"
+            let sendstring2 = y + " " + speed + "=m" + mid
             radio.sendString(sendstring)
             radio.sendString(sendstring2)
             command_enable = 0
@@ -412,7 +412,7 @@ namespace Tello {
     //% group="上級者向け"
     export function xyz_easy(ex: MyEnumX, ey: MyEnumY, ez: MyEnumZ,): void {
         if (flying == 1 && command_enable == 1) {
-            let sendstring = "go=" + ex + "=" + ez + "=" + ey + "=60"
+            let sendstring = "go=" + ex + " " + ez + " " + ey + "=60"
             radio.sendString(sendstring)
             command_enable = 0
         }
@@ -433,8 +433,8 @@ namespace Tello {
     //% group="上級者向け"
     export function curve(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, speed: number): void {
         if (flying == 1 && command_enable == 1) {
-            let sendstring = "curve=" + x1 + "=" + z1 + "=" + y1 + "=&"
-            let sendstring2 = x2 + "=" + z2 + "=" + y2 + "=" + speed
+            let sendstring = "curve=" + x1 + " " + z1 + " " + y1 + "=&"
+            let sendstring2 = x2 + " " + z2 + " " + y2 + " " + speed
             radio.sendString(sendstring)
             radio.sendString(sendstring2)
             command_enable = 0
