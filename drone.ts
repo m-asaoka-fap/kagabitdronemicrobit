@@ -313,6 +313,7 @@ namespace Tello {
      */
     //% block="カメラを切り替える "
     //% group="上級者向け"
+    /*
     export function swiching_camera(): void {
         if (flying == 1 && command_enable == 1) {
             if (camera == 1) {
@@ -326,7 +327,7 @@ namespace Tello {
             }
         }
     }
-
+    */
     /**
     * ドローンが三次元で移動します
     * @param x x -100-100, eg: 0
@@ -336,6 +337,7 @@ namespace Tello {
     */
     //% block="自由飛行 | 前後（前が＋） %x 上下（上が＋） %y 左右（左が＋） %z speed %speed"
     //% group="上級者向け"
+    /*
     export function xyz(x: number, y: number, z: number, speed: number): void {
         if (flying == 1 && command_enable == 1) {
             let sendstring = "go=" + x + " " + z + " " + y + " " + speed
@@ -343,43 +345,46 @@ namespace Tello {
             command_enable = 0
         }
     }
-
+    */
     /**
     * 電源AをONにする！
     */
     //% block="電源AをON "
     //% group="上級者向け"
+    /*
     export function energy_on_A(): void {
         if (flying == 1 && command_enable == 1) {
             radio.sendString("energy_on_A")
             command_enable = 0
         }
     }
-
+    */
     /**
-   * 電源BをONにする！
-   */
+    * 電源BをONにする！
+    */
     //% block="電源BをON "
     //% group="上級者向け"
+    /*
     export function energy_on_B(): void {
         if (flying == 1 && command_enable == 1) {
             radio.sendString("energy_on_B")
             command_enable = 0
         }
     }
-
+    */
     /**
    * 電源CをONにする！
    */
     //% block="電源CをON "
     //% group="上級者向け"
+    /*
     export function energy_on_C(): void {
         if (flying == 1 && command_enable == 1) {
             radio.sendString("energy_on_C")
             command_enable = 0
         }
     }
-
+    */
 
     /**
     * ミッションパッド検出機能が有効になっている
@@ -394,6 +399,7 @@ namespace Tello {
     */
     //% block="ミッションパッドへ飛行(ドローンコンテストでは使用不可) | 前後（前が＋） %x 上下（上が＋） %y 左右（左が＋） %z speed %speed ミッションパッド番号 %mid"
     //% group="ミッションパッド"
+    /*
     export function gomid(x: number, y: number, z: number, speed: number, mid: number): void {
         if (flying == 1 && command_enable == 1) {
             let sendstring = "go=" + x + " " + z + " &"
@@ -403,13 +409,13 @@ namespace Tello {
             command_enable = 0
         }
     }
-
-
+    */
     /**
    * ドローンが三次元で移動します(かんたんver)
    */
     //% block="自由飛行(かんたん) | 前後 %ex 上下 %ey 左右 %ez"
     //% group="上級者向け"
+    /*
     export function xyz_easy(ex: MyEnumX, ey: MyEnumY, ez: MyEnumZ,): void {
         if (flying == 1 && command_enable == 1) {
             let sendstring = "go=" + ex + " " + ez + " " + ey + "=60"
@@ -417,8 +423,7 @@ namespace Tello {
             command_enable = 0
         }
     }
-
-
+    */
     /**
    * ドローンが曲線で移動します(ドローンコンテストでは使用不可)
    * @param x1 x1 -100-100, eg: 0
@@ -431,6 +436,7 @@ namespace Tello {
    */
     //% block="曲線飛行(ドローンコンテストでは使用不可) | 前後（前が＋） %x1 上下（上が＋） %y1 左右（左が＋） %z1  前後 %x2 上下 %y2 左右 %z2 speed %speed"
     //% group="上級者向け"
+/*
     export function curve(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number, speed: number): void {
         if (flying == 1 && command_enable == 1) {
             let sendstring = "curve=" + x1 + " " + z1 + " " + y1 + "=&"
@@ -440,8 +446,7 @@ namespace Tello {
             command_enable = 0
         }
     }
-
-
+*/
 }
 
 let flying = 0
